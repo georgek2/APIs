@@ -1,0 +1,55 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.wrapper{
+    background-color: rgb(15, 60, 144);
+}
+
+.container{
+    display: flex;
+    padding: 10%;
+    justify-content: center;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2em;
+}
+
+.my_btns{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10%;
+    font-size: 150%;
+}
+
+#one{
+    background-color: rgb(190, 43, 6);
+    color: rgb(236, 231, 231);
+    width: 20%;
+    height: 3em;
+}
+
+#two{
+    background-color: rgb(70, 24, 10);
+    color: rgb(241, 229, 229);
+    width: 20%;
+    height: 3em;
+}
+
+#three{
+    background-color: rgb(84, 155, 13);
+    color: rgb(241, 221, 221);
+    width: 20%;
+    height: 3em;
+}
+
+.output{
+    margin: 10%;
+    font-size: 1.4em;
+}
+
+.head{    
+    padding-bottom: 8%;
+}

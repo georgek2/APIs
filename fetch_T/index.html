@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First API Project</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <div class="container">
+            <div id="landing">
+                <h2>Our First Tutorial</h2>
+                <p class="para">
+                    This will be awesome menh!!. Gotta get at it...
+                </p>
+            </div>
+        </div>
+
+        <div class="my_btns">
+            <button id='one'>Get Text</button>
+            <button id="two">Get JSON</button>
+            <button id="three">API Data</button>
+        </div>
+
+    </div>
+
+    <div class="main">
+
+    </div>
+
+
+    <!-- <script src="two.js"></script> -->
+
+
+
+
+
+
+
+
+    <script>
+        document.getElementById("one").addEventListener("click", getText);
+
+        function getText() {
+            fetch('sample.txt').then(function (res) {
+                // console.log(res.text());
+                return res.text();
+            }).then(function(data){
+                console.log(data)
+            })
+        }
+
+        document.getElementById('two').addEventListener('click', function () {
+            let mine = 'Not yours';
+            let yours = 'Not mine';
+
+            console.log("What's mine is", mine)
+            console.log("What's yours is", yours)
+        });
+
+        let getPara = function () {
+            let para = 'Have at it';
+            console.log(para);
+        };
+        document.getElementById('three').addEventListener('click', getPara);
+
+
+    </script>
+
+</body>
+
+</html>
